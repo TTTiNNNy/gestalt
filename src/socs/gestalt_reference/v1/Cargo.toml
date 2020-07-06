@@ -1,0 +1,13 @@
+#![no_main]
+[package]
+name = "gestalt_reference"
+version = "0.1.0"
+authors = ["TTTiNNNy"]
+
+[dependencies]
+bare-metal = "*"
+cortex-m = "*"
+vcell = "*"
+cortex-m-rt = "*"
+cortex-m-semihosting = "*"
+panic-halt = "*"

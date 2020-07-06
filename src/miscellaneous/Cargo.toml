@@ -1,0 +1,11 @@
+#![no_main]
+[package]
+name = "miscellaneous"
+version = "0.1.0"
+authors = ["TTTiNNNy"]
+
+[dependencies]
+bare-metal = "*"
+cortex-m = "*"
+vcell = "*"
+

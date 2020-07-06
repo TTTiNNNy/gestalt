@@ -1,0 +1,17 @@
+#![no_main]
+[package]
+name = "nrf52840_drivers"
+version = "0.1.0"
+authors = ["TTTiNNNy"]
+
+[dependencies]
+bare-metal = "*"
+cortex-m = "*"
+vcell = "*"
+
+
+[dependencies.nrf52840_peripheral_access]
+path= "../peripheral_access"
+
+[dependencies.gestalt_reference]
+path= "../../../gestalt_reference/v1"

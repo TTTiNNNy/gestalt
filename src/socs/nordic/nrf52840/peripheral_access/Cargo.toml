@@ -1,0 +1,11 @@
+[package]
+name = "nrf52840_peripheral_access"
+version = "0.1.0"
+authors = ["svd2rust"]
+
+[dependencies]
+bare-metal = "*"
+cortex-m = "*"
+vcell = "*"
+
+
