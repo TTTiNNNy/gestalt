@@ -252,7 +252,7 @@ pub enum Interrupt {
     #[doc = "47 - SPIM3"]
     SPIM3 = 47,
 }
-unsafe impl bare_metal::Nr for Interrupt {
+unsafe impl cortex_m::interrupt::Nr for Interrupt {
     #[inline(always)]
     fn nr(&self) -> u8 {
         *self as u8
@@ -1661,7 +1661,7 @@ impl Deref for P0 {
 pub mod p0;
 #[doc = "GPIO Port 2"]
 pub struct P1 {
-    _marker: PhantomData<*const ()>, 
+    _marker: PhantomData<*const ()>,
 }
 unsafe impl Send for P1 {}
 impl P1 {

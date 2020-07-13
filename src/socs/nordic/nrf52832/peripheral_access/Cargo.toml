@@ -8,4 +8,9 @@ bare-metal = "*"
 cortex-m = "*"
 vcell = "*"
 
+[dependencies.cortex-m-rt]
+optional = true
+version = "*"
 
+[features]
+rt = ["cortex-m-rt/device"]

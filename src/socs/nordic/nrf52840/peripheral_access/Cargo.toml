@@ -4,8 +4,13 @@ version = "0.1.0"
 authors = ["svd2rust"]
 
 [dependencies]
-bare-metal = "*"
-cortex-m = "*"
-vcell = "*"
+bare-metal = "1.0.0"
+vcell = "0.1.2"
+cortex-m = "0.6.2"
 
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.12"
 
+[features]
+rt = ["cortex-m-rt/device"]
