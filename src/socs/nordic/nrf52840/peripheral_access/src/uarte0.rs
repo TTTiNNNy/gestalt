@@ -61,7 +61,7 @@ pub struct RegisterBlock {
     pub psel: PSEL,
     _reserved23: [u8; 12usize],
     #[doc = "0x524 - Baud rate. Accuracy depends on the HFCLK source selected."]
-    pub baudrate: BAUDRATE,
+    pub     baudrate: BAUDRATE,
     _reserved24: [u8; 12usize],
     #[doc = "0x534 - RXD EasyDMA channel"]
     pub rxd: RXD,

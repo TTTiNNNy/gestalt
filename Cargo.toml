@@ -35,6 +35,9 @@ path= "src/socs/gestalt_reference/v1"
 [[example]]
 name = "gpio"
 path = "examples/drivers/gpio.rs"
+[[example]]
+name = "uart"
+path = "examples/drivers/uart.rs"
 
 # Uncomment for the panic example.
 # panic-itm = "0.4.1"

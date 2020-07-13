@@ -18,7 +18,7 @@ use cortex_m_rt::entry;
 fn main() -> !
 {
 
-    let p_0 = gpio::new(gpio::GpioPort::P0);
+    let p_0 = gpio::new(gpio::GpioInst::P0);
 
     p_0.set_derection(gpio::GpioPin::Gpio20,gestalt_reference::gpio::GpioDir::OUT);
     p_0.set_derection(gpio::GpioPin::Gpio22,gestalt_reference::gpio::GpioDir::OUT);
