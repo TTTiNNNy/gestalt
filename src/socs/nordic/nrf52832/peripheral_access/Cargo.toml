@@ -1,5 +1,5 @@
 [package]
-name = "nrf52832"
+name = "peripheral_access"
 version = "0.1.0"
 authors = ["svd2rust"]
 

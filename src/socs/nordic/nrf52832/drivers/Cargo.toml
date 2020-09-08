@@ -1,0 +1,32 @@
+#![no_main]
+[package]
+name = "drivers"
+version = "0.1.0"
+authors = ["TTTiNNNy"]
+edition = "2018"
+
+
+[dependencies]
+bare-metal = "*"
+cortex-m = "*"
+vcell = "*"
+num-derive = "0.3"
+gestalt_reference = { path = "../../../gestalt_reference/v1/" }
+
+[dependencies.num_enum]
+version = "0.4.3"
+default-features = false
+
+[dependencies.num]
+version = "0.3"
+default-features = false
+
+[dependencies.num-traits]
+version = "0.2"
+default-features = false
+features = ["libm"]
+
+[dependencies.peripheral_access]
+path= "../peripheral_access"
+
+
