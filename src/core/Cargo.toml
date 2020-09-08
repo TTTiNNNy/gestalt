@@ -1,0 +1,23 @@
+#![no_main]
+[package]
+name = "gestalt_core"
+version = "0.1.0"
+authors = ["TTTiNNNy"]
+edition = "2018"
+
+[dependencies]
+bare-metal = "*"
+cortex-m = "*"
+vcell = "*"
+cortex-m-rt = "*"
+
+
+[dependencies.alloc-no-stdlib]
+version = "2.0.1"
+default-features = false
+
+[dependencies.drivers]
+path= "../../src/socs/nordic/nrf52/"
+
+[dependencies.peripheral_access]
+path= "../../src/socs/nordic/nrf52832/peripheral_access"
